@@ -1,0 +1,149 @@
+
+
+</body>
+</html>
+from pathlib import Path
+from zipfile import ZipFile
+
+# HTML content for "The Boston" website with black, white, and red theme and login/join tabs
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Boston</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    header {
+      background-color: black;
+      color: red;
+      padding: 20px;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      border-bottom: 2px solid white;
+    }
+
+    nav {
+      background-color: red;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: black;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .form-container {
+      background-color: #111;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 10px;
+      border: 1px solid red;
+    }
+
+    .form-container h2 {
+      color: red;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    footer {
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    THE BOSTON
+  </header>
+
+  <nav>
+    <a href="#login">Login</a>
+    <a href="#join">Join</a>
+  </nav>
+
+  <section id="login">
+    <div class="form-container">
+      <h2>Login</h2>
+      <form onsubmit="event.preventDefault(); alert('Login Submitted!');">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="join">
+    <div class="form-container">
+      <h2>Join Us</h2>
+      <form onsubmit="event.preventDefault(); alert('Join Form Submitted!');">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 THE BOSTON. All rights reserved.
+  </footer>
+
+</body>
+</html>
+"""
+
+<a href="index.html" target="_blank">Visit The Boston Website</a>
+
+
